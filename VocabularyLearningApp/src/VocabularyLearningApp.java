@@ -5,7 +5,7 @@ public class VocabularyLearningApp {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        VocabularyList vocabularyList = new VocabularyList();5
+        VocabularyList vocabularyList = new VocabularyList();
         String dateiname = "C:\\Users\\Milan\\IdeaProjects\\VocabularyLearningApp\\Liste\\vokabeln.txt"; // Absoluter Pfad zur Datei
 
         while (true) {
