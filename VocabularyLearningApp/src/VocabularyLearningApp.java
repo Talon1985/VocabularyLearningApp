@@ -6,7 +6,7 @@ public class VocabularyLearningApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         VocabularyList vocabularyList = new VocabularyList();
-        String dateiname = "VocabularyLearningApp\\Liste\\vokabeln.txt"; // Absoluter Pfad zur Datei
+        String dateiname = "C:\\Users\\Milan\\IdeaProjects\\VocabularyLearningApp\\VocabularyLearningApp\\Liste\\vokabeln.txt"; // Absoluter Pfad zur Datei
 
         while (true) {
             System.out.println("\n*** Vokabeltrainer ***");
