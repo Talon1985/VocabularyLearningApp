@@ -1,0 +1,248 @@
+primitive variables; primitive Variablen
+Statement; Aussage
+true; wahr
+can; können
+compared; verglichen
+equals method; equals-Methode
+compareTo method; compareTo-Methode
+== Operator; ==-Operator
+cannot; können nicht
+object-oriented Concept; objektorientiertes Konzept
+encapsulation; Kapselung
+Statement; Aussage
+describes; beschreibt
+allows; erlaubt
+overloading; Überladen
+instance Methods; Instanzmethoden
+provides; bietet
+Control; Kontrolle
+data; Daten
+concurrent execution; gleichzeitige Ausführung
+multiple threads; mehrere Threads
+Methods; Methoden
+Content; Inhalt
+file; Datei
+code Fragment; Codefragment
+used; verwendet
+enable; ermöglichen
+compile; kompilieren
+public class; öffentliche Klasse
+static class; statische Klasse
+private class; private Klasse
+class; Klasse
+code Fragment; Codefragment
+inserted; eingefügt
+line; Zeile
+enable; ermöglichen
+code; Code
+print; ausgeben
+false; falsch
+Statement; Aussage
+true; wahr
+JDK; JDK (Java Development Kit)
+part; Teil
+JVM; JVM (Java Virtual Machine)
+contains; enthält
+development Tools; Entwicklungswerkzeuge
+platform Independent; plattformunabhängig
+used to; wird verwendet, um
+handle exceptions; Ausnahmen behandeln
+code Fragment; Codefragment
+result; Ergebnis
+ArrayIndexOutOfBoundsException; ArrayIndexOutOfBoundsException (Ausnahme, wenn ein Array-Index außerhalb des Bereichs liegt)
+is thrown; wird ausgelöst
+run time; Laufzeit
+compilation error; Kompilierungsfehler
+occurs; tritt auf
+code; Code
+result; Ergebnis
+compilation error; Kompilierungsfehler
+occurs; tritt auf
+class; Klasse
+default constructor; Standardkonstruktor
+Test Passed!; Test bestanden!
+runtime exception; Laufzeitausnahme
+is thrown; wird ausgelöst
+Statement; Aussage
+true; wahr
+Java programming language; Java-Programmiersprache
+structured programming language; strukturierte Programmiersprache
+used to develop; wird verwendet, um zu entwickeln
+desktop applications; Desktopanwendungen
+web applications; Webanwendungen
+low-level programming language; niedrigstufige Programmiersprache
+scripting programming language; Skriptprogrammiersprache
+why; warum
+compilation; Kompilierung
+fail; scheitern/nicht erfolgreich sein
+option variable; Variablenoption
+initialized; initialisiert
+break Statement; break-Anweisung
+missing; fehlt
+data type; Datentyp
+incorrect; falsch/fehlerhaft
+order; Reihenfolge
+case labels; case-Labels/Markierungen
+result; Ergebnis
+num; Variable num (kann so übernommen werden)
+program; Programm
+executes; führt aus
+indefinitely; unendlich
+Method identifier; Methodenbezeichner
+correct; korrekt/richtig
+according to; gemäß/nach
+naming conventions; Namenskonventionen
+Bill; Rechnung
+Calculator; Rechner
+calculate: berechnen
+Frage; Frage
+Antwort; Antwort
+Contents; Inhalte
+Statement; Aussage
+true; wahr/richtig
+commands; Befehle
+throw an error; werfen einen Fehler
+missing; fehlend
+are used to; werden verwendet, um
+print; ausgeben/anzeigen
+is studying; studiert/lernt
+file; Datei
+code Fragment; Codeausschnitt
+compilation error; Kompilierungsfehler
+occur; auftreten
+line; Zeile
+lines; Zeilen
+code Fragment; Codeausschnitt
+for loop Statement; for-Schleifen-Anweisung
+can be used; kann verwendet werden
+to print; um auszugeben
+Array; Array
+length; Länge
+Import; importieren
+mean; bedeuten
+only; nur
+class; Klasse
+all; alle
+package; Paket
+subpackages; Unterpakete
+if any; falls vorhanden
+are imported; werden importiert
+given; gegeben/vorgegeben
+result; Ergebnis
+compilation Fails; Kompilierung schlägt fehl
+to make it compile; um es zu kompilieren
+replace; ersetzen
+line; Zeile
+nothing is printed; nichts wird ausgegeben
+meaning; Bedeutung
+write once, run anywhere; Einmal schreiben, überall ausführen
+Java programs; Java-Programme
+designed; entwickelt
+run; ausführen/laufen
+web Browsers; Webbrowser
+wherever; überall, wo
+browser: Browser
+marketing Statement; Marketingaussage
+must; müssen
+compiled; kompiliert
+specific platform; spezifische Plattform
+Java Virtual Machine (JVM); Java Virtual Machine (JVM)
+without being recompiled; ohne erneut kompiliert zu werden
+after being compiled; nach der Kompilierung
+platform; Plattform
+device; Gerät
+identify; identifizieren
+three Features; drei Merkmale
+Java programming language; Java-Programmiersprache
+distributed; verteilt
+direct memory Management; direkte Speicherverwaltung
+multithreaded; mehrthreadfähig
+strongly typed; stark typisiert
+dynamically typed; dynamisch typisiert
+given; gegeben/vorgegeben
+code Fragment; Codefragment
+result; Ergebnis
+lotus Jasmine; lotus jasmine (Blumennamen, können übernommen werden)
+compilation error; Kompilierungsfehler
+occurs; tritt auf
+lotus lily; lotus lily (Blumennamen, können übernommen werden)
+Statement; Aussage
+true; wahr
+exception handling; Ausnahmebehandlung
+at least; mindestens
+catch block; catch-Block
+must accompany; muss begleiten/muss vorhanden sein
+try Statement; try-Anweisung
+all Statements; alle Anweisungen
+executed; ausgeführt
+even if; selbst wenn
+occurs; tritt auf
+middle; Mitte
+throw an exception; eine Ausnahme auslösen
+ordered; geordnet
+from general to most specific; vom Allgemeinen zum Spezifischsten
+given; gegeben/vorgegeben
+code Fragment; Codefragment
+result; Ergebnis
+program; Programm
+executes; führt aus
+infinite number of times; unendlich oft
+Statement; Aussage
+true; wahr
+Java method; Java-Methode
+must; muss
+declared; deklariert/definiert
+access modifier; Zugriffsmodifikator
+cannot; kann nicht
+defined; definiert
+within another method; innerhalb einer anderen Methode
+accept a Parameter; einen Parameter akzeptieren
+return a value; einen Wert zurückgeben
+static final; static final
+given; gegeben/vorgegeben
+code Fragment; Codefragment
+which two; welche zwei
+valid; gültig
+line 2; Zeile 2
+package; Paket
+Import; Import
+Display; anzeigen
+asked; gebeten
+develop; entwickeln
+Java program; Java-Programm
+prints; druckt/gibt aus
+Elements; Elemente
+Array; Array
+in reverse order; in umgekehrter Reihenfolge
+looping Statement; Schleifenanweisung
+cannot; kann nicht
+used; verwendet
+meet the requirement; die Anforderung erfüllen
+enhanced for; erweiterte for-Schleife
+standard for; Standard-for-Schleife
+
+
+
+Frage 41
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
