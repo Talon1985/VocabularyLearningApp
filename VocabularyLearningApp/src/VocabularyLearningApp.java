@@ -6,7 +6,10 @@ public class VocabularyLearningApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         VocabularyList vocabularyList = new VocabularyList();
-        String dateiname = "C:\\Users\\Milan\\IdeaProjects\\VocabularyLearningApp\\VocabularyLearningApp\\Liste\\vokabeln.txt"; // Absoluter Pfad zur Datei
+        String dateiname = "C:\\Users\\Milan\\IdeaProjects\\VocabularyLearningApp\\VocabularyLearningApp\\Liste\\vokabeln.txt";
+
+        // Vokabelliste beim Start automatisch laden
+        readFromFile(dateiname, vocabularyList);
 
         while (true) {
             System.out.println("\n*** Vokabeltrainer ***");
@@ -19,7 +22,7 @@ public class VocabularyLearningApp {
             System.out.print("Wählen Sie eine Option (1-6): ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Eingabepuffer leeren
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -27,8 +30,7 @@ public class VocabularyLearningApp {
                     String english = scanner.nextLine();
                     System.out.print("Geben Sie das deutsche Wort ein: ");
                     String german = scanner.nextLine();
-                    Vocabulary vocabulary = new Vocabulary(english, german);
-                    vocabularyList.addVocabulary(vocabulary);
+                    vocabularyList.addVocabulary(new Vocabulary(english, german));
                     System.out.println("Vokabel hinzugefügt!");
                     break;
 
@@ -38,7 +40,7 @@ public class VocabularyLearningApp {
                     break;
 
                 case 3:
-                    vocabularyList.learnVocabulary(); // Multiple-Choice-Methode wird aufgerufen
+                    vocabularyList.learnVocabulary();
                     break;
 
                 case 4:
@@ -46,14 +48,7 @@ public class VocabularyLearningApp {
                     return;
 
                 case 5:
-                    StringBuilder text = new StringBuilder();
-                    for (Vocabulary vocab : vocabularyList.getVocabularyList()) {
-                        text.append(vocab.getEnglishWord())
-                                .append(";")
-                                .append(vocab.getGermanWord())
-                                .append("\n");
-                    }
-                    saveToFile(dateiname, text.toString());
+                    saveToFile(dateiname, vocabularyList);
                     break;
 
                 case 6:
@@ -61,35 +56,40 @@ public class VocabularyLearningApp {
                     break;
 
                 default:
-                    System.out.println("Ungültige Auswahl, bitte wählen Sie eine Zahl von 1 bis 6.");
+                    System.out.println("Ungültige Auswahl. Bitte erneut versuchen.");
             }
         }
     }
 
-    private static void saveToFile(String dateiname, String text) {
+    private static void saveToFile(String dateiname, VocabularyList vocabularyList) {
         try {
-            FileWriter writer = new FileWriter(dateiname, false); // false = Überschreibmodus
-            writer.write(text);
+            FileWriter writer = new FileWriter(dateiname, false);
+            for (Vocabulary vocab : vocabularyList.getVocabularyList()) {
+                writer.write(vocab.getEnglishWord() + ";" + vocab.getGermanWord() + "\n");
+            }
             writer.close();
-            System.out.println("Vokabeln wurden erfolgreich gespeichert.");
+            System.out.println("Vokabeln wurden gespeichert.");
         } catch (IOException e) {
-            System.out.println("Fehler beim Schreiben in die Datei: " + e.getMessage());
+            System.out.println("Fehler beim Speichern: " + e.getMessage());
         }
     }
 
     private static void readFromFile(String dateiname, VocabularyList vocabularyList) {
         try {
+            File file = new File(dateiname);
+            if (!file.exists()) {
+                System.out.println("Datei nicht gefunden. Es werden keine Vokabeln geladen.");
+                return;
+            }
+
             BufferedReader reader = new BufferedReader(new FileReader(dateiname));
             String zeile;
-
             while ((zeile = reader.readLine()) != null) {
                 String[] teile = zeile.split(";");
                 if (teile.length == 2) {
-                    Vocabulary vocab = new Vocabulary(teile[0], teile[1]);
-                    vocabularyList.addVocabulary(vocab);
+                    vocabularyList.addVocabulary(new Vocabulary(teile[0], teile[1]));
                 }
             }
-
             reader.close();
             System.out.println("Vokabeln wurden erfolgreich geladen.");
         } catch (IOException e) {
