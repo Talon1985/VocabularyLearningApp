@@ -6,7 +6,7 @@ public class VocabularyLearning {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
             VocabularyList vocabularyList = new VocabularyList();
-            String dateiname = "C:\\Users\\Milan\\IdeaProjects\\VocabularyLearningApp1\\Liste\\vokabeln.txt";
+            String dateiname = "C:\\Users\\Milan\\IdeaProjects\\VocabularyLearningApp\\src\\VocabularyLearningApp\\Liste\\vokabeln.txt";
 
             // Vokabelliste beim Start automatisch laden
             readFromFile(dateiname, vocabularyList);
