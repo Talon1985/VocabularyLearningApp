@@ -1,5 +1,3 @@
-package VocabularyLearningApp;
-
 import java.util.*;
 
 public class VocabularyList {

@@ -1,5 +1,3 @@
-package VocabularyLearningApp;
-
 public class Vocabulary {
 
 
